@@ -5,6 +5,7 @@
   --dark: #010101;
   --light: #efefef;
   --text-color: #3e3e3e;
+  --cute-red: #ff6961;
   --font: 'Inconsolata', monospace;
 }
 body{
@@ -45,7 +46,7 @@ header{
   align-items: center;
 }
 .header-content{
-  padding: 20px 7rem;
+  padding: 3% 5%;
 }
 .header-content h1{
   color: var(--secondary);
@@ -67,4 +68,57 @@ header{
   width: 90%;
   padding: 2rem;
   
+}
+
+/* SPECIALS SECTION */
+.specials{
+  min-height: 60vh;
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+}
+.specials .upper-section{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 3%;
+}
+.specials .bottom-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.specials .bottom-section .menu-card{
+  width: 300px;
+  background-color: var(--light);
+}
+.specials .bottom-section .menu-card .menu-image img{
+  width: 300px;
+  height: 300px;
+}
+.menu-content{
+  padding:0 20px;
+}
+.specials .bottom-section .menu-card .menu-item{
+  display: flex;
+  gap: 6%;
+  padding: 30px 0;
+}
+.specials .bottom-section .menu-card .menu-item .item-name{
+  font-weight: 700;
+  font-size: 18px;
+}
+.specials .bottom-section .menu-card .menu-item .item-price{
+  color: var(--cute-red);
+  font-size: 16px;
+}
+.menu-description{
+  line-height: 22px;
+}
+.menu-cta{
+  font-weight: 800;
+  padding: 20px 0;
 }
