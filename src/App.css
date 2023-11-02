@@ -6,7 +6,9 @@
   --light: #efefef;
   --text-color: #3e3e3e;
   --cute-red: #ff6961;
+  --accent: #ccd5ae;
   --font: 'Inconsolata', monospace;
+
 }
 body{
   font-family: var(--font);
@@ -160,6 +162,25 @@ header{
   /* font-style: italic; */
   padding: 1% 0;
 }
+/* reservation */
+.reservation{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent);
+}
+.form-booking{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-booking img{
+  width: 128px;
+}
+/* FOOTER */
 footer{
   display: flex;
   justify-content: center;
