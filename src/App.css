@@ -10,5 +10,20 @@
 body{
   font-family: var(--font);
   color: var(--text-color);
+}
 
+/* NAVBAR CSS */
+nav .navbar-nav li a{
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  transition: all 0.5s;
+}
+nav .navbar-nav li a:active{
+  color: var(--primary);
+}
+
+nav .navbar-nav li a:hover{
+  color: var(--primary);
 }
