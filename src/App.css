@@ -11,6 +11,8 @@
 body{
   font-family: var(--font);
   color: var(--text-color);
+  margin:0;
+  padding:0;
 }
 .cta{
   background-color: var(--secondary);
@@ -157,4 +159,37 @@ header{
   text-align: center;
   /* font-style: italic; */
   padding: 1% 0;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 2% 5%;
+}
+footer .footer-col-1 img{
+  width: 50%;
+}
+footer .footer-col-2 ul li{
+  list-style: none;
+  font-size: 22px;
+}
+
+footer .footer-col-3 ul li{
+  list-style: none;
+  font-size: 22px;
+}
+.footer-bottom{
+  background-color: var(--dark) ;
+  color: var(--light);
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom p{
+  margin:0;
 }
