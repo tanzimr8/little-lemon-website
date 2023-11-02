@@ -5,13 +5,11 @@ import Nav from './components/shared/Nav'
 function App() {
   return (
     <>
-    <Nav/>
-    
-    <Routes>
+      <Nav/>
+      <Routes>
         <Route path="/" element={<Homepage/>}> 
         </Route>
       </Routes>
-
     </>
   );
 }
