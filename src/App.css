@@ -97,7 +97,7 @@ header{
 }
 .specials .bottom-section .menu-card{
   width: 300px;
-  background-color: var(--light);
+  background-color: var(--secondary);
 }
 .specials .bottom-section .menu-card .menu-image img{
   width: 300px;
@@ -110,14 +110,16 @@ header{
   display: flex;
   gap: 6%;
   padding: 30px 0;
+  align-items: center;
 }
 .specials .bottom-section .menu-card .menu-item .item-name{
   font-weight: 700;
   font-size: 18px;
 }
 .specials .bottom-section .menu-card .menu-item .item-price{
-  color: var(--cute-red);
+  color: var(--primary);
   font-size: 16px;
+  font-weight: 800;
 }
 .menu-description{
   line-height: 22px;
@@ -176,10 +178,24 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--light);
+  padding: 100px;
+  background-color: var(--light);
+  box-shadow: rgba(244, 206, 20, 0.2) 0px 7px 29px 0px;
 }
 .form-booking img{
   width: 128px;
 }
+.btnBook{
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0px;
+}
+.btnBook:hover{
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
 /* FOOTER */
 footer{
   display: flex;

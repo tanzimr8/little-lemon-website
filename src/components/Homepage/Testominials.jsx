@@ -14,7 +14,7 @@ const Testominials = () => {
             <div className="customer-avatar">
               <img src={Avatar1} alt="Avatar"  />
             </div>
-            <div className="customer-name">Spiderman</div>
+            <div className="customer-name">Harry Potter</div>
           </div>
           <div className="review">
             <blockquote className='blockquote'>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi expedita repellat minima, non enim provident aut nulla ipsam doloremque iusto nihil at nisi? Sint et temporibus quaerat accusamus recusandae."</blockquote>

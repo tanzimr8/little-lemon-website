@@ -8,7 +8,7 @@ const Header = () => {
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam deserunt quaerat, non, hic perferendis voluptatibus ea dolor porro, maxime commodi minima culpa accusantium reiciendis ullam recusandae? Cum, animi unde?</p>
-        <Link to='/' className="cta btn-reserve">Reserve a Table</Link>
+        <Link to='/reservation' className="cta btn-reserve">Reserve a Table</Link>
       </div> 
       <div className="header-image">
         <img src={Image} alt='restaurant food'/>
