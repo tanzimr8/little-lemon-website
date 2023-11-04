@@ -1,12 +1,12 @@
 import React from 'react'
 import Icon from './../../images/meeting.png'
-const BookingForm = ({state,dispatch,availabeTimes,availabeOccassions}) => {
+const BookingForm = ({state,dispatch,availabeTimes,availabeOccassions,handleSubmit,isValidated}) => {
   return (
     <div>
       <div className="form-booking">
-        <img src={Icon} alt="meeting icon" srcset="" />
+        <img src={Icon} alt="meeting icon" />
         <h2 className='text-center my-3'>Book a Table</h2>
-        <form className='form'>
+        <form className='form' onSubmit={handleSubmit}>
             <div className="form-group">
                 <div className="input-group">
                     <input id="date" name="date" placeholder="Answer" className="form-control"  type="date"
@@ -42,7 +42,7 @@ const BookingForm = ({state,dispatch,availabeTimes,availabeOccassions}) => {
                 </div>
             </div>
                 <div className="form-group">
-                    <input name="book" className="btn btn-lg btn-success btn-block btnBook" value="BOOK TABLE" type="submit"/>
+                    <button disabled={!isValidated()} name="book" className='btn btn-lg btn-success btn-block' type="submit" >BOOK A TABLE</button>
                 </div>
             </form>
       </div>
