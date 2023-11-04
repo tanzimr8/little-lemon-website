@@ -19,8 +19,8 @@ const BookingForm = ({state,dispatch,availabeTimes,availabeOccassions,handleSubm
                 <div class="input-group">
                     <select name='time' className="form-control" id="sel1" value={state.time} onChange={(e)=>{dispatch({type:"HANDLE TIME CHANGE", payload:e.target.value, field: e.target.name })}}   >
                         <option selected="true" disabled="disabled">Choose Time</option>
-                        {availabeTimes.map((availabeTime)=>{
-                            return <option>{availabeTime}</option>
+                        {availabeTimes.map((availabeTime,index)=>{
+                            return <option key={index}>{availabeTime}</option>
                         })}
                     </select>
                 </div>
@@ -36,8 +36,8 @@ const BookingForm = ({state,dispatch,availabeTimes,availabeOccassions,handleSubm
                     onChange={(e)=>{dispatch({type:"HANDLE OCCASSION CHANGE", payload: e.target.value, field:e.target.name})}}
                     >
                         <option selected="true" disabled="disabled">Please Select Occassion</option>
-                        {availabeOccassions.map((occassion)=>{
-                            return <option>{occassion}</option>
+                        {availabeOccassions.map((occassion,index)=>{
+                            return <option key={index}>{occassion}</option>
                         })}
                     </select>
                 </div>
