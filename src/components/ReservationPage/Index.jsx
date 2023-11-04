@@ -12,11 +12,12 @@ const Index = () => {
   const [state,dispatch] = useReducer(FormReducer,initialFormState);
   const availabeTimes= fetchAPI(state.date);;
   const availabeOccassions= ['Birthday', 'Anniversary','Marriage'];
-  // const [isValidated, setIsValidated] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = (e)=>{
     e.preventDefault();
-    
-    alert('formSubmitted');
+    if(isValidated()){
+      setIsSubmitted(true)
+    }
   }
   const isValidated = ()=>{
     if(state.date !== '' && state.time !== '' && state.numberOfGuest !=='' && state.occassions !==''){
@@ -29,7 +30,7 @@ const Index = () => {
   return (
     <div className='reservation'>
       {<BookingForm
-        state={state} dispatch = {dispatch} availabeTimes= {availabeTimes} availabeOccassions= {availabeOccassions} handleSubmit= {handleSubmit} isValidated={isValidated}
+        state={state} dispatch = {dispatch} availabeTimes= {availabeTimes} availabeOccassions= {availabeOccassions} handleSubmit= {handleSubmit} isValidated={isValidated} isSubmitted={isSubmitted}
       />}
     </div>
   )

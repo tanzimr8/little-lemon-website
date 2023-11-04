@@ -195,6 +195,44 @@ header{
   background-color: var(--secondary);
   color: var(--dark);
 }
+/* FORM BOOKED */
+.form-booked{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid var(--light);
+  padding: 100px;
+  background-color: var(--light);
+  box-shadow: rgba(244, 206, 20, 0.2) 0px 7px 29px 0px;
+
+}
+.form-booked .booked-message{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  /* background-color: var(--secondary); */
+  padding: 20px 50px;
+  border: 2px solid var(--primary);
+  margin-bottom: 20px;
+}
+.form-booked .booked-message h2{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.booked-info{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--secondary);
+  padding: 30px 50px;
+  justify-content: center;
+}
+.booked-info p{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
 
 /* FOOTER */
 footer{
